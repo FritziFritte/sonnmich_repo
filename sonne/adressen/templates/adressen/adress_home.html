@@ -1,0 +1,13 @@
+<!-- adressen/templates/adressen/adress_home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Alle Adressen</h2>
+<ul>
+    {% for adresse in object_list %}
+    <li><a href="{% url 'adress_detail' adresse.pk %}">{{ adresse.vorname }} {{ adresse.nachname }}</a></li>
+    {% endfor %}
+</ul>
+<a class="btn btn-success btn-sm" href="{% url 'neue_adresse' %}">+ Neue Adresse hinzufügen</a>
+{% endblock content %}

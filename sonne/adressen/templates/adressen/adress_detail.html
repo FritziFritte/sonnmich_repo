@@ -1,0 +1,15 @@
+<!-- adressen/templates/adressen/adress_detail.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Adressdetail</h2>
+    <p>Vorname: {{adressen.vorname }}</p>
+    <p>Name: {{adressen.nachname }}</p>
+    <p>Strasse: {{adressen.strasse}}</p>
+    <p>PLZ: {{adressen.plz}}</p>
+    <p>Ort: {{adressen.ort}}</p>
+    <a class="btn btn-secondary btn-sm" href="{% url 'adress_start' %}">Zurück</a>
+    <a class="btn btn-danger btn-sm" href="{% url 'adress_delete' adressen.pk %}">Löschen</a>
+    <a class="btn btn-success btn-sm" href="{% url 'adress_update' adressen.pk %}">Update</a>
+{% endblock content %}
