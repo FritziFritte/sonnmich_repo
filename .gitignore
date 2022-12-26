@@ -11,8 +11,6 @@ venv/
 # Datenbank
 db.sqlite3
 
-# Static Ordner im Projektverzeichnis
-/static/
 
 # macOS
 ._*
