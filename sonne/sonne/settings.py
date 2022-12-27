@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-k2&u0ue(q*&z1%%b#%caz6!bpuehdkz5%cravzs0&2oh#xm&40
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1","fritto.pythonanywhere.com"]
 
 
 # Application definition
