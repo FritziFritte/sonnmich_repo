@@ -3,11 +3,14 @@ from django.urls import reverse # Neu
 
 
 class Adressen(models.Model):
-    vorname = models.CharField(max_length=50)
-    nachname = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     strasse = models.CharField(max_length=100)
+    hausnummer = models.IntegerField()
     plz = models.IntegerField()
     ort = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='images/', max_length=255)
+
+    
     
     def __str__(self): # Neu
         return self.nachname # Neu
