@@ -6,7 +6,7 @@
 <h2>Adresse löschen</h2>
 <form action="" method="post">{% csrf_token %}
     <p>Bist du sicher das du folgende Adresse löschen möchtest?</p>
-    <p><strong>{{ adressen.vorname }} {{ adressen.nachname }}</strong></p>
+    <p><strong>{{ adressen.name }}</strong></p>
     <a class="btn btn-secondary btn-sm" href="{% url 'adress_detail' adressen.pk %}">Zurück</a>
     <button type="submit btn-sm" class="btn btn-danger btn-sm">Löschen</button>
 </form>
