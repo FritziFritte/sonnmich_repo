@@ -1,15 +1,13 @@
 # Python
 *.pyc
 *~
-__pycache__
+
 
 # Env
 .env
 env/
 venv/
 
-# Datenbank
-db.sqlite3
 
 
 # macOS
