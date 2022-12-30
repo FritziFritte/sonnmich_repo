@@ -8,7 +8,10 @@
 env/
 venv/
 
+db.sqlite3
 
+media
+!media/.gitkeep
 
 # macOS
 ._*
