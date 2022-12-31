@@ -10,7 +10,7 @@
         <a href="{% url 'adress_detail' adresse.pk %}">
             {{ adresse.name }}
             {% if adresse.image %}
-            <img src="{{ adresse.image.url }}" width="500">
+            <img src="{{ adresse.image.url }}" style="width: 50vw">
             {% endif %}
         </a>
     </li>
