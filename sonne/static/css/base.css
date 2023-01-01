@@ -1,1 +1,36 @@
-h1, h2 {  color: rgb(250, 100, 250); /* Changes the color of the h1 element to blue */}body {  background-color: #FFE5B4;}
+.rounded-image {
+  border-radius: 50px;
+
+}
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #333;
+  }
+  
+  a {
+    color: #0074c9;
+  }
+  
+  a:hover {
+    color: #0066b2;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ccc;
+    margin: 0 0 16px 0;
+  }
+  
