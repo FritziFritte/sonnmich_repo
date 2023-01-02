@@ -5,26 +5,22 @@
 {% block content %}
 <ul class="no-bullets">
     {% for adresse in object_list %}
-        <li>
-            <div class="responsive">
-                             
-                <div class="container">
-
-                    <div class="adresse-name"> 
-                        <h2 class="title">{{ adresse.name }}</h2>
-                    </div>     
-                  
-
-                    <a href="{% url 'adress_detail' adresse.pk %}">
-                        <figure class="grid__figure">
-                            <img src="{{ adresse.image.url }}" >
-                        </figure>
-                    </a>
-                
-                </div>   
-            </div>
-        </li>
-    {% endfor %}
+    <li>
+      <div class="responsive">
+        <div class="container">
+          <div class="adresse-name"> 
+            <h2 class="title">{{ adresse.name }}</h2>
+          </div>     
+          <a href="{% url 'adress_detail' adresse.pk %}">
+            <figure class="grid__figure">
+              <img src="{{ adresse.image.url }}" >    
+            </figure>
+          </a>
+        </div>  
+        <span id='ct_{{ adresse.pk }}'></span>
+      </div>
+    </li>
+  {% endfor %}
 
 </ul>
 <a class="btn btn-success btn-sm" href="{% url 'neue_adresse' %}">+ Neue Adresse hinzufügen</a>
