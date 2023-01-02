@@ -3,20 +3,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Übersicht Locations</h2>
-<ul>
+<ul class="no-bullets">
     {% for adresse in object_list %}
-    <li class="adress-item">
-        <div class="adresse-banner">
-        <a href="{% url 'adress_detail' adresse.pk %}">
-            {% if adresse.image %}
-            <img src="{{ adresse.image.url }}" class="rounded-image">
-            {% endif %}
-            <h3 class="adresse-name">{{ adresse.name }}</h3>
-        </a>
+    <li>
+        <div class="responsive">
+            
+            <div class="container">
+                
+                <a href="{% url 'adress_detail' adresse.pk %}">
+                    <img src="{{ adresse.image.url }}" >
+                </a>
+               
+            </div>   
+            <div class="adresse-name">{{ adresse.name }}</div>
         </div>
     </li>
 {% endfor %}
+
 </ul>
 <a class="btn btn-success btn-sm" href="{% url 'neue_adresse' %}">+ Neue Adresse hinzufügen</a>
 {% endblock content %}  
+
