@@ -33,6 +33,9 @@
 
 * {
   box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
 } 
 
 .responsive {
@@ -65,10 +68,8 @@
 	border-radius: 50%;
 	height:400px;
 	width:400px;
-	overflow:hidden;
+	overflow: hidden;
 	text-align: center;
-	margin: auto;
-  
 }
 
 img {
@@ -79,7 +80,7 @@ img {
 }
 
 .title {
-  background-color: rgba(125, 53, 53, 0.5); /* White color with 50% transparency */
+  background-color: rgba(108, 122, 165, 0.5); /* White color with 50% transparency */
 }
 
 

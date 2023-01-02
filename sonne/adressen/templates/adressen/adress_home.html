@@ -7,14 +7,13 @@
     {% for adresse in object_list %}
         <li>
             <div class="responsive">
-                
+                             
                 <div class="container">
 
-                               
-                    <!-- <div class="adresse-name">
+                    <div class="adresse-name"> 
                         <h2 class="title">{{ adresse.name }}</h2>
-                    </div> -->
-                    
+                    </div>     
+                  
 
                     <a href="{% url 'adress_detail' adresse.pk %}">
                         <figure class="grid__figure">
