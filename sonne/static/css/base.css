@@ -43,7 +43,7 @@
   height: 24.999%;
 } 
 
-/* @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
@@ -58,7 +58,7 @@
   content: "";
   display: table;
   clear: both;
-}  */
+} 
 
 
 .container {
