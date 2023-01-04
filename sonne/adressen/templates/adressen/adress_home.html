@@ -1,5 +1,4 @@
 <!-- adressen/templates/adressen/adress_home.html -->
-
 {% extends 'base.html' %}
 
 {% block content %}
@@ -17,7 +16,7 @@
             </figure>
           </a>
         </div>  
-        <span id='ct_{{ adresse.pk }}'></span>
+        <span id='ct_{{ forloop.counter }}'></span>
       </div>
     </li>
   {% endfor %}
