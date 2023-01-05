@@ -10,6 +10,7 @@ function display_ct() {
     var x = new Date();
     var pk = images[i].getAttribute("data-pk");
     document.getElementById('ct_' + pk).innerHTML = x.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    
   }
 
   display_c();
