@@ -4,11 +4,12 @@ function display_c(){
 }
 
 function display_ct() {
-  var objectList = [{name: "object1"}, {name: "object2"}];
-
-  for (var i = 0; i < objectList.length; i++) {
+  console.log("display_ct() wurde aufgerufen");  // Debug-Nachricht
+  var images = document.querySelectorAll("img");
+  for (var i = 0; i < images.length; i++) {
     var x = new Date();
-    document.getElementById('ct_' + (i + 1)).innerHTML = x.toTimeString();
+    var pk = images[i].getAttribute("data-pk");
+    document.getElementById('ct_' + pk).innerHTML = x.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
   }
 
   display_c();
