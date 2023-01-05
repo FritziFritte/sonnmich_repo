@@ -15,13 +15,16 @@
             <img src="{{ adresse.image.url }}" data-pk="{{ adresse.pk }}">    
           </figure>
         </a>
-        <span id='ct_{{ adresse.pk }}'></span>
       </div>  
+      <span id='ct_{{ adresse.pk }}'></span>
     </div>
   </li>
 {% endfor %}
 
 
 </ul>
+
 <a class="btn btn-success btn-sm" href="{% url 'neue_adresse' %}">+ Neue Adresse hinzufügen</a>
 {% endblock content %}  
+
+

@@ -4,7 +4,6 @@ function display_c(){
 }
 
 function display_ct() {
-  console.log("display_ct() wurde aufgerufen");  // Debug-Nachricht
   var images = document.querySelectorAll("img");
   for (var i = 0; i < images.length; i++) {
     var x = new Date();
